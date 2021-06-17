@@ -1,31 +1,31 @@
 .container {
     height: 100vh;
 }
-.row.up {
-    height: 90vh;
+.col-xs-10 {
+    display: flex;
+    flex-direction: column;
+    background-color: #141922;
 }
-.row.down {
-    height: 10vh;
-}
-
 nav {
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #000;
 }
 header {
     height: 100px;
-    width: 100%;
-    position: fixed;
-    background-color: red;
+    width: calc(100% / 12 * 12);
+    max-width: calc(100% / 12 * 12);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 main {
-    height: calc(100vh - 100px);
-    background-color: yellow;
+    width: calc(100% / 12 * 12);
+    max-width: calc(100% / 12 * 12);
+    height: calc(100vh - 200px);
+    background-color: #141922;
     overflow: auto;
 }
 footer {
     height: 100px;
     width: 100%;
-    background-color: teal;
+    background-color: #282828;
 }
