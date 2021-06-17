@@ -1,32 +1,99 @@
 .container {
     height: 100vh;
+    font-family: "montserrat";
 }
-.col-xs-10 {
+.col-xs-11 {
     display: flex;
     flex-direction: column;
     background-color: #141922;
+}
+.col-xs-11 .row header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.col-xs-11 .row header span {
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+
 }
 nav {
     height: 100%;
     width: 100%;
     background-color: #000;
 }
+nav .row {
+    height: 100%;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+nav .row .col-xs-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+nav .row .col-xs-12 img {
+    width: 60%;
+    padding: 5px 0;
+}
 header {
     height: 100px;
     width: calc(100% / 12 * 12);
     max-width: calc(100% / 12 * 12);
     background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
 }
 main {
     width: calc(100% / 12 * 12);
     max-width: calc(100% / 12 * 12);
     height: calc(100vh - 200px);
     background-color: #141922;
-    overflow: auto;
+    overflow: scroll;
+    color: #fff;
+}
+main .row .title.col-xs-12 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .row .col-xs-12 .title {
+    font-size: 12px;
+    margin: 15px 0;
+    color: #aaa;
+    width: 25%;
+    text-align: center;
+}
+main .row .col-xs-12 .rp {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+main .row .album.col-xs-12 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main .row .album.col-xs-12 figure {
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+}
+main .row .album.col-xs-12 figure img {
+    width: 90%;
+}
+main .row .album.col-xs-12 figure figcaption {
+    font-weight: 700;
+}
+main .row .album.col-xs-12 figure p {
+    font-size: 12px;
+    color: #aaa;
 }
 footer {
     height: 100px;
-    width: 100%;
+    
     background-color: #282828;
 }
 @media screen and (min-width: 576px) {
@@ -34,4 +101,6 @@ footer {
 }
 @media screen and (min-width: 768px) {
     
+}
+@media screen and (min-width: 992px) {
 }
