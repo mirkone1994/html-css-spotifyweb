@@ -1,0 +1,32 @@
+.container {
+    height: 100vh;
+}
+.row.up {
+    height: 90vh;
+}
+.row.down {
+    height: 10vh;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+header {
+    height: 15%;
+    width: 100%;
+
+    background-color: red;
+}
+main {
+    height: 85%;
+    width: 100%;
+
+    background-color: yellow;
+}
+footer {
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+}
