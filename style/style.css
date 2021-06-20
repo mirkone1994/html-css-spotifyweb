@@ -2,6 +2,7 @@
     height: 100vh;
     font-family: "montserrat";
 }
+/*HEADER*/
 .col-xs-11 {
     display: flex;
     flex-direction: column;
@@ -18,8 +19,15 @@
     margin-right: 10px;
     border: 1px solid #fff;
     border-radius: 25px;
-
 }
+header {
+    height: 100px;
+    width: calc(100% / 12 * 12);
+    max-width: calc(100% / 12 * 12);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+/*NAVBAR*/
 nav {
     height: 100%;
     width: 100%;
@@ -34,19 +42,22 @@ nav .row .col-xs-12 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    color: #fff;    
 }
 nav .row .col-xs-12 img {
     width: 60%;
     padding: 5px 0;
 }
-header {
-    height: 100px;
-    width: calc(100% / 12 * 12);
-    max-width: calc(100% / 12 * 12);
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
+nav .row .col-xs-12 .logo {
+    display: none;
 }
+nav .row .col-xs-12 span {
+    display: none;
+}
+nav .row .col-xs-12 div {
+    display: none;
+}
+/*MAIN*/
 main {
     width: calc(100% / 12 * 12);
     max-width: calc(100% / 12 * 12);
@@ -55,6 +66,7 @@ main {
     overflow: scroll;
     color: #fff;
 }
+/*Generi*/
 main .row .title.col-xs-12 {
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +83,7 @@ main .row .col-xs-12 .rp {
     padding-left: 10px;
     margin-top: 20px;
 }
+/*Album*/
 main .row .album.col-xs-12 {
     display: flex;
     flex-wrap: wrap;
@@ -100,6 +113,7 @@ main .row .album.col-xs-12 p {
 main .row .album.col-xs-12 .circle {
     border-radius: 50%;
 }
+/*FOOTER*/
 footer {
     height: 100px;
     background-color: #282828;
@@ -120,7 +134,7 @@ footer .row .col-xs-4 .row .img.col-xs-3 {
     justify-content: center;
     display: flex;
 }
-footer .row .col-xs-4 .row .col-xs-6 {
+footer .row .col-xs-4 .row .col-xs-5 {
     font-size: 10px;
 }
 footer .row .col-xs-4 .row .col-xs-12 {
@@ -152,10 +166,95 @@ footer .row .right.col-xs-4 .row .col-xs-2 {
 
 }
 @media screen and (min-width: 576px) {
-
+    nav .row .col-xs-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    nav .row .col-xs-12 img {
+        width: 20%;
+        padding: 5px;
+        margin-left: 10px;
+    }
+    nav .row .col-xs-12 .logo {
+        display: block;
+        width: 70%;
+    }
+    nav .row .col-xs-12 .logos {
+        display: none;
+    } 
+    nav .row .col-xs-12 span {
+        display: block;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    nav .row .col-xs-12 div {
+        display: block;
+        margin-top: 10px;
+    }
+    nav .row .col-xs-12 div h2 {
+        margin-left: 10px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    nav .row .col-xs-12 div span {
+        margin: 20px 10px;
+        color: #aaa;
+        font-size: 12px;
+    }
+    nav .row .col-xs-12 .hr {
+        background-color: #aaa;
+        height: 1px;
+        width: 100%;
+    }
+    main .row .col-xs-12 .title {
+        font-size: 12px;
+        margin: 15px 0;
+        color: #aaa;
+        width: 33%;
+        text-align: center;
+    }
 }
 @media screen and (min-width: 768px) {
-    
+    main .row .album.col-xs-12 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    main .row .album.col-xs-12 figure {
+        margin-top: 20px;
+        width: 25%;
+        text-align: center;
+    }
+    main .row .col-xs-12 .title {
+        font-size: 12px;
+        margin: 15px 0;
+        color: #aaa;
+        width: 20%;
+        text-align: center;
+    }
+    footer .row .col-xs-4 .row .right.col-xs-3 {
+        justify-content: space-around;
+        display: flex;
+    }
 }
 @media screen and (min-width: 992px) {
+    main .row .album.col-xs-12 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    main .row .album.col-xs-12 figure {
+        margin-top: 20px;
+        width: 16%;
+        text-align: center;
+    }
+    main .row .col-xs-12 .title {
+        font-size: 12px;
+        margin: 15px 0;
+        color: #aaa;
+        width: 16%;
+        text-align: center;
+    }
 }
