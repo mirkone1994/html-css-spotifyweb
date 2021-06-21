@@ -1,5 +1,4 @@
-.container {
-    height: 100vh;
+.container-fluid {
     font-family: "montserrat";
 }
 /*HEADER*/
@@ -33,14 +32,14 @@ header {
 }
 /*NAVBAR*/
 nav {
-    height: 100%;
+    height: calc(100vh - 100px);
     width: 100%;
     background-color: #000;
 }
 nav .row {
-    height: 100%;
     justify-content: flex-end;
     align-content: space-between;
+    height: 100%;
 }
 nav .row .col-xs-12 {
     display: flex;
@@ -48,12 +47,14 @@ nav .row .col-xs-12 {
     align-items: center;
     color: #aaa;    
 }
-nav .row .col-xs-12 img {
-    width: 60%;
+nav .row .col-xs-12 ul li img {
+    width: 80%;
     padding: 5px 0;
 }
-nav .row .col-xs-12 div h2 {
+nav .row .col-xs-12 h3 {
     color: #fff;
+    margin-left: 10px;
+    display: none;
 }
 nav .row .col-xs-12 span:hover {
     color: #fff;
@@ -67,6 +68,40 @@ nav .row .col-xs-12 span {
 nav .row .col-xs-12 div {
     display: none;
 }
+.playlist {
+    margin-top: 80px;
+    width: 100%;
+    height: 30vh;
+    overflow: scroll;
+}
+.navi {
+    margin-bottom: 80px;
+    padding-top: 10px;
+}
+.user {
+    font-size: 12px;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding-top: ;
+    height: 10vh;
+}
+.plus {
+    display: none;
+}
+ul .img {
+    width: 100%;
+    text-align: center;
+}
+
+ul .span {
+    width: 80%;
+    display: none;
+}
+
 /*MAIN*/
 .row.up {
     height: calc(100vh - 100px);
@@ -217,6 +252,7 @@ footer .row .right.col-xs-4 .row .col-xs-2 {
     nav .row .col-xs-12 img {
         width: 20%;
         margin-left: 5px;
+        padding-top: 10px;
     }
     nav .row .col-xs-12 .active {
         border-left: 3px solid green;
@@ -252,6 +288,27 @@ footer .row .right.col-xs-4 .row .col-xs-2 {
         background-color: #aaa;
         height: 1px;
         width: 100%;
+    }
+    nav .row .col-xs-12 h3 {
+        color: #fff;
+        margin-left: 10px;
+        display: block;
+    }
+    .plus {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        margin-left: 5px;
+    }
+    ul .img {
+        width: 20%;
+        text-align:left;
+    }
+    ul .span {
+        width: 80%;
+        display: block;
     }
     main .row .col-xs-12 .title {
         font-size: 12px;
