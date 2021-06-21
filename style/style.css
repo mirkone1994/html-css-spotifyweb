@@ -12,6 +12,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
 }
 .col-xs-11 .row header span {
     font-size: 12px;
@@ -67,7 +68,8 @@ nav .row .col-xs-12 div {
 main {
     width: calc(100% / 12 * 12);
     max-width: calc(100% / 12 * 12);
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
+    padding-top: 100px;
     background-color: #141922;
     overflow: scroll;
     color: #fff;
@@ -143,6 +145,7 @@ main .row .album.col-xs-12 .circle {
     border-radius: 50%;
 }
 /*FOOTER*/
+
 footer {
     height: 100px;
     background-color: #282828;
