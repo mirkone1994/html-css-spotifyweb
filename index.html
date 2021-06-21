@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/bool12.css">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <title>Spotify</title>
 </head>
 <body>
     <div class="container">
@@ -19,7 +19,7 @@
                         <div class="col-xs-12">
                             <img class="logos" src="./img/logo-small.svg" alt="">
                             <img class="logo" src="./img/logo.svg" alt="">
-                    	    <img src="./img/home.svg" alt=""><span>Home</span>
+                    	    <img class="active" src="./img/home.svg" alt=""><span>Home</span>
                             <img src="./img/search.svg" alt=""><span>Cerca</span>
                             <img src="./img/libreria.svg" alt=""><span>La tua libreria</span>
                             <div>
@@ -53,7 +53,10 @@
                     <main>
                         <div class="row">
                             <div class="title col-xs-12">
-                                <span class="title">IN EVIDENZA</span>
+                                <div class="title">
+                                    <span class="title">IN EVIDENZA</span>
+                                    <div></div>
+                                </div>
                                 <span class="title">PODCAST</span>
                                 <span class="title">CLASSIFICHE</span>
                                 <span class="title">GENERI E MODD</span>
@@ -68,31 +71,37 @@
                             <div class="album col-xs-12">
                                 <figure>
                                     <img src="./img/metal_lifting.jpg" alt="">
+                                    <i class="fas fa-play fa-2x"></i>
                                     <figcaption>Heavy Metal</figcaption>
                                     <p>Subtitle</p>
                                 </figure>
                                 <figure>
                                     <img src="./img/stranger.jpeg" alt="">
+                                    <i class="fas fa-play fa-2x"></i>
                                     <figcaption>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</figcaption>
                                     <p>Kyle Dixon & Michael Stein</p>
                                 </figure>
                                 <figure>
                                     <img src="./img/aquietplace.jpeg" alt="">
+                                    <i class="fas fa-play fa-2x"></i>
                                     <figcaption>A quite place</figcaption>
                                     <p>Subtitle</p>
                                 </figure>
                                 <figure>
                                     <img src="./img/split.jpeg" alt="">
+                                    <i class="fas fa-play fa-2x"></i>
                                     <figcaption>Splite</figcaption>
                                     <p>Subtitle</p>
                                 </figure>
                                 <figure>
                                     <img src="./img/cure.jpeg" alt="">
+                                    <i class="fas fa-play fa-2x"></i>
                                     <figcaption>A cure for wellness</figcaption>
                                     <p>Subtitle</p>
                                 </figure>
                                 <figure>
                                     <img src="./img/sinister.jpeg" alt="">
+                                    <i class="fas fa-play fa-2x"></i>
                                     <figcaption>Sinister</figcaption>
                                     <p>Subtitle</p>
                                 </figure>
@@ -104,11 +113,15 @@
                                 </div>
                                 <figure>
                                     <img src="./img/radar.jpeg" alt="">
+                                    <i class="fas fa-play fa-2x"></i>
                                     <figcaption>Release Radar</figcaption>
+                                    <p>Subtitle</p>
                                 </figure>
                                 <figure>
                                     <img src="./img/mixdaily.jpeg" alt="">
+                                    <i class="fas fa-play fa-2x"></i>
                                     <figcaption>Daily Mix</figcaption>
+                                    <p>Subtitle</p>
                                 </figure>
                                 <div class="rp col-xs-12">
                                     <h2  class="rp">
@@ -118,11 +131,15 @@
                                 </div>
                                 <figure>
                                     <img class="circle" src="./img/youg.jpeg" alt="">
-                                    <figcaption>Young & Beautiful</figcaption>
+                                    <i class="fas fa-play fa-2x"></i>
+                                    <figcaption>Lana Del Rey</figcaption>
+                                    <p>Subtitle</p>
                                 </figure>
                                 <figure>
                                     <img class="circle" src="./img/einaudi.jpeg" alt="">
+                                    <i class="fas fa-play fa-2x"></i>
                                     <figcaption>Einaudi</figcaption>
+                                    <p>Subtitle</p>
                                 </figure>
                             </div>
                         </div>
@@ -134,7 +151,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <footer>
                     <div class="row">
-                        <div class="col-xs-4">
+                        <div class="col-xs-4 col-md-3">
                             <div class="row left">
                                 <div class="img col-xs-3">
                                     <img src="./img/sinister.jpeg" alt="">
@@ -150,7 +167,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4">
+                        <div class="col-xs-4 col-md-offest-1 col-md-4">
                             <div class="row">
                                 <div class="up col-xs-12">
                                     <div class="row">
@@ -170,7 +187,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="right col-xs-4">
+                        <div class="right col-xs-4 col-md-offest-1 col-md-3">
                             <div class="row">
                                 <div class="col-xs-2"><i class="fas fa-list-ul"></i></div>
                                 <div class="col-xs-2"><i class="fas fa-desktop"></i></div>

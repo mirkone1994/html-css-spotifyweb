@@ -42,11 +42,17 @@ nav .row .col-xs-12 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;    
+    color: #aaa;    
 }
 nav .row .col-xs-12 img {
     width: 60%;
     padding: 5px 0;
+}
+nav .row .col-xs-12 div h2 {
+    color: #fff;
+}
+nav .row .col-xs-12 span:hover {
+    color: #fff;
 }
 nav .row .col-xs-12 .logo {
     display: none;
@@ -79,6 +85,15 @@ main .row .col-xs-12 .title {
     width: 25%;
     text-align: center;
 }
+main .row .col-xs-12 .title div {
+    height: 3px;
+    width: 30%;
+    border-bottom: 3px solid green;
+    margin-left: 35%;
+}
+main .row .col-xs-12 .title:hover {
+    color: #fff;
+}
 main .row .col-xs-12 .rp {
     padding-left: 10px;
     margin-top: 20px;
@@ -93,9 +108,23 @@ main .row .album.col-xs-12 figure {
     margin-top: 20px;
     width: 50%;
     text-align: center;
+    position: relative;
 }
 main .row .album.col-xs-12 figure img {
     width: 90%;
+}
+main .row .album.col-xs-12 figure i {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    display: none;
+}
+
+main .row .album.col-xs-12 figure img:hover {
+    filter: opacity(0.3);
+}
+main .row .album.col-xs-12 figure img:hover + i {
+    display: block;
 }
 main .row .album.col-xs-12 figure figcaption {
     font-weight: 700;
@@ -174,8 +203,11 @@ footer .row .right.col-xs-4 .row .col-xs-2 {
     }
     nav .row .col-xs-12 img {
         width: 20%;
-        padding: 5px;
-        margin-left: 10px;
+        margin-left: 5px;
+    }
+    nav .row .col-xs-12 .active {
+        border-left: 3px solid green;
+        margin-left: 0;
     }
     nav .row .col-xs-12 .logo {
         display: block;
