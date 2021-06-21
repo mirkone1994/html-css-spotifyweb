@@ -13,6 +13,9 @@
     justify-content: flex-end;
     align-items: center;
     position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 .col-xs-11 .row header span {
     font-size: 12px;
@@ -65,6 +68,9 @@ nav .row .col-xs-12 div {
     display: none;
 }
 /*MAIN*/
+.row.up {
+    height: calc(100vh - 100px);
+}
 main {
     width: calc(100% / 12 * 12);
     max-width: calc(100% / 12 * 12);
@@ -145,9 +151,13 @@ main .row .album.col-xs-12 .circle {
     border-radius: 50%;
 }
 /*FOOTER*/
-
-footer {
+.row.down {
     height: 100px;
+    position: relative;
+    z-index: 1;
+}
+footer {
+    height: 100%;
     background-color: #282828;
 }
 footer .row .col-xs-4 .row {
