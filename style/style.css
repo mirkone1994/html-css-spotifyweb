@@ -162,10 +162,11 @@ main .row .album.col-xs-12 figure {
 }
 main .row .album.col-xs-12 figure img {
     width: 90%;
+    position: relative;
 }
 main .row .album.col-xs-12 figure i {
     position: absolute;
-    top: 30%;
+    top: 28%;
     left: 45%;
     display: none;
 }
